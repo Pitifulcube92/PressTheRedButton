@@ -2076,7 +2076,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6158912841851391008, guid: abbacdea29a3b82408e0f33a8eb5470f, type: 3}
       propertyPath: x
-      value: 0
+      value: 0.035
+      objectReference: {fileID: 0}
+    - target: {fileID: 6158912841851391008, guid: abbacdea29a3b82408e0f33a8eb5470f, type: 3}
+      propertyPath: y
+      value: 0.035
       objectReference: {fileID: 0}
     - target: {fileID: 6495349269484801291, guid: abbacdea29a3b82408e0f33a8eb5470f, type: 3}
       propertyPath: m_RenderMode
@@ -2116,19 +2120,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8841218801602902279, guid: abbacdea29a3b82408e0f33a8eb5470f, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1707.038
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 8841218801602902279, guid: abbacdea29a3b82408e0f33a8eb5470f, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 754.479
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841218801602902279, guid: abbacdea29a3b82408e0f33a8eb5470f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841218801602902279, guid: abbacdea29a3b82408e0f33a8eb5470f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841218801602902279, guid: abbacdea29a3b82408e0f33a8eb5470f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8841218801602902279, guid: abbacdea29a3b82408e0f33a8eb5470f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -187.36
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8841218801602902279, guid: abbacdea29a3b82408e0f33a8eb5470f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.0000076294
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8841218801602902279, guid: abbacdea29a3b82408e0f33a8eb5470f, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
