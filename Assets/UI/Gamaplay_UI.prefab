@@ -85,7 +85,6 @@ GameObject:
   - component: {fileID: 4831516485793529535}
   - component: {fileID: 2923107100971948900}
   - component: {fileID: 6158912841851391008}
-  - component: {fileID: 4882822691177297986}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -125,7 +124,7 @@ Canvas:
   m_GameObject: {fileID: 1666403613367058026}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
@@ -195,27 +194,6 @@ MonoBehaviour:
   backgroundImg: {fileID: 2036731033631505691}
   y: 0
   x: 0.035
---- !u!95 &4882822691177297986
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1666403613367058026}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 137e5a1dbd2ea0f4ab98ace6fc2b95e4, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2006650117512859790
 GameObject:
   m_ObjectHideFlags: 0

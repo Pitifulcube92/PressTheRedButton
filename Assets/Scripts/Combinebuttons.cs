@@ -21,9 +21,9 @@ public class Combinebuttons : MonoBehaviour
 
     public IEnumerator SpawnRedbutton(Collider2D tmpColl_)
     {
-        Instantiate(_redbutton, gameObject.transform);
+        Instantiate(_redbutton, gameObject.transform.position, Quaternion.identity);
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.01f);
 
         Destroy(tmpColl_.gameObject);
         Destroy(gameObject);

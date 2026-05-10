@@ -15,6 +15,7 @@ public class LevelManager : MonoBehaviour
             scManager = new SceneManager();
         }
         //Debug.Log("Scenes: " + SceneManager.sceneCount);
+       
         ListLevelName();
     }
     
@@ -27,10 +28,22 @@ public class LevelManager : MonoBehaviour
         int tmp = GameManager.instance.GetCurrentLevel();
         tmp += 1;
         GameManager.instance.SetCurrnetLevel(tmp);
-        if ((GameManager.instance.GetCurrentLevel() - 1) > SceneManager.sceneCount)
+        if ((GameManager.instance.GetCurrentLevel() - 1) > SceneManager.sceneCountInBuildSettings)
         {
             LoadMainMenu();
+            //GameManager.instance.GetSoundManager().PlayMusicClip("Pleasure_Field");
+            //GameManager.instance.GetSoundManager().SetLoopBGM(true);
             GameManager.instance.SetCurrnetLevel(0);
+        }
+        if (tmp == 7)
+        {
+            GameManager.instance.GetSoundManager().PlayMusicClip("Creepy_Basement");
+            GameManager.instance.GetSoundManager().SetLoopBGM(true);
+        }
+        if (tmp == 11)
+        {
+            GameManager.instance.GetSoundManager().PlayMusicClip("Pleasure_Field");
+            GameManager.instance.GetSoundManager().SetLoopBGM(true);
         }
         LoadSceneByIndex(GameManager.instance.GetCurrentLevel());
     }

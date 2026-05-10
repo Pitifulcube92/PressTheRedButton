@@ -54,8 +54,11 @@ public class UI_MainMenu : BaseUIScript
                    
                     break;
             }
-            //x.onClick.AddListener(delegate { GameManager.instance.GetSoundManager().PlaySFXClip("Retro_Blop_18",false, GameManager.instance.GetSoundManager().GetSFXSource(1)); });
+            x.onClick.AddListener(delegate { GameManager.instance.GetSoundManager().PlaySFXClip("ButtonPress", false, GameManager.instance.GetSoundManager().GetSFXSource(1)); });
         }
+
+        GameManager.instance.GetSoundManager().PlayMusicClip("Pleasure_Field");
+        GameManager.instance.GetSoundManager().SetLoopBGM(true);
         //gameObject.GetComponent<Canvas>().worldCamera = GameObject.FindObjectOfType<Camera>();
         //GameObject.FindAnyObjectByType<Camera>();
     }

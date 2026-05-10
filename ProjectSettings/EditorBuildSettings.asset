@@ -14,4 +14,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Test_Level_2.unity
     guid: d140e91b9f055454f9dbb42b84a35eec
+  - enabled: 1
+    path: Assets/Test_Level_3.unity
+    guid: 5eabe35cf870f804cb644da7a20e3ea5
+  - enabled: 1
+    path: Assets/Test_Level_4.unity
+    guid: e957aa22dbb53104f8c4d454f2befcc5
+  - enabled: 1
+    path: Assets/Test_Level_5.unity
+    guid: d4fe528c051e0c34da6ca20dcf9d37a4
+  - enabled: 1
+    path: Assets/Test_Level_6.unity
+    guid: 3c03785b2254eaf4aa1c3837d4222c11
+  - enabled: 1
+    path: Assets/Test_Level_7.unity
+    guid: d8683902f0d74a6459f8efb2a4935fba
+  - enabled: 1
+    path: Assets/Test_Level_8.unity
+    guid: 18c4e5472f903bf4e85fa029f49361f7
+  - enabled: 1
+    path: Assets/Test_Level_9.unity
+    guid: e7c62e124d17ed64392c2ac936104747
+  - enabled: 1
+    path: Assets/Test_Level_10.unity
+    guid: f0d6d1f623d12954ebea021858c62b2f
+  - enabled: 1
+    path: Assets/Test_Level_11.unity
+    guid: c9621d9a79148b24bb51dfc4a44e05b9
   m_configObjects: {}

@@ -76,7 +76,7 @@ public class LevelScript : Base_Level_Component
         Debug.Log("Tries: " + GameManager.instance.GetNumberofChances());
         GameManager.instance.CheckChances();
         uI_Level.UpdateChanceUI(GameManager.instance.GetNumberofChances());
-        GameManager.instance.SetCurrnetLevel(0);
+        //GameManager.instance.SetCurrnetLevel(0);
     }
     // Update is called once per frame
     public IEnumerator LoadLevel()
@@ -90,7 +90,7 @@ public class LevelScript : Base_Level_Component
     public void StartLevelSequence()
     {
         uI_Level.gameplayTexts.Find(x => x.name == "Timerleft").text = displayTimer(0);
-        StartChallege(30);
+        StartChallege(10);
     }
     void Update()
     {

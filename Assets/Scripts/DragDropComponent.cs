@@ -13,11 +13,13 @@ public class DragDropComponent : MonoBehaviour
     {
 
         dragOffset = transform.position - GetMousePos();
+        GameManager.instance.GetSoundManager().PlaySFXClip("ButtonPress", false, GameManager.instance.GetSoundManager().GetSFXSource(1));
         spriteRen.sprite = pressedBtnSprite_;
     }
     public void OnMouseUp()
     {
         gameObject.GetComponent<BoxCollider2D>().enabled = true;
+        GameManager.instance.GetSoundManager().PlaySFXClip("ButtonPress", false, GameManager.instance.GetSoundManager().GetSFXSource(1));
         spriteRen.sprite = defaultBtnSprite_;
     }
     public void OnMouseDrag()

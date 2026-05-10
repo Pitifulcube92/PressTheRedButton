@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -34,12 +35,14 @@ public class GameManager : MonoBehaviour
             Debug.LogError("GameManager has hit a critical error!");
             Application.Quit();
         }
-        ToggleFullScreen(true);
+        ToggleFullScreen(false);
+        Screen.SetResolution(960, 720, false);
         IntializeApplication();
     }
     private void IntializeApplication()
     {
         //Run MainMenu, Play music;
+        Debug.Log(SceneManager.sceneCountInBuildSettings);
         audioSys.SetBGMVolume(audioSys.GetBGMVolume());
         audioSys.SetSFXVolume(audioSys.GetSFXVolume());
         audioSys.SetLoopBGM(true);
@@ -85,7 +88,7 @@ public class GameManager : MonoBehaviour
         if (tmp_)
         {
             Screen.fullScreen = true;
-            Screen.SetResolution(960, 720, true);
+            Screen.SetResolution(960, 720, false);
             
             //Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
         }

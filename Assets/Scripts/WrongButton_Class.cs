@@ -22,6 +22,7 @@ public class WrongButton_Class : MonoBehaviour
     private void OnMouseDown()
     {
         spriteRen.sprite = pressedBtnSprite_;
+        GameManager.instance.GetSoundManager().PlaySFXClip("ButtonPress", false, GameManager.instance.GetSoundManager().GetSFXSource(1));
         lossChance();
     }
     private void OnMouseUp()
@@ -31,6 +32,7 @@ public class WrongButton_Class : MonoBehaviour
 
     private void lossChance()
     {
+        GameManager.instance.GetSoundManager().PlaySFXClip("WrongButton",false, GameManager.instance.GetSoundManager().GetSFXSource(2));
         GameObject.FindObjectOfType<LevelScript>().LostChance();
         GameObject.FindObjectOfType<Camera_Shake_Component>().ShakeCamera(1, 1);
         Debug.Log("Wrong! Loss a chance");

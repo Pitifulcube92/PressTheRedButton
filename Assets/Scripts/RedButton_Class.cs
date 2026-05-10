@@ -22,6 +22,7 @@ public class RedButton_Class : MonoBehaviour
     private void OnMouseDown()
     {
         spriteRen.sprite = pressedBtnSprite_;
+        GameManager.instance.GetSoundManager().PlaySFXClip("ButtonPress", false, GameManager.instance.GetSoundManager().GetSFXSource(1));
         WinLevel();
     }
     private void OnMouseUp()
