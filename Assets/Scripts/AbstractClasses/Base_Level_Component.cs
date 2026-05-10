@@ -11,7 +11,7 @@ public abstract class Base_Level_Component : MonoBehaviour
     }
     public void baseStart()
     {
-        Awake();
+        //Awake();
     }
     public abstract void InitalizeComponent();
     public abstract void ResetComponent();
